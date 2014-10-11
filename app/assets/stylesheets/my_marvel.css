@@ -1,0 +1,146 @@
+.body-wrapper {
+  margin-top: 350px;
+}
+
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.char-img {
+  border: 2px solid;
+  border-color: black;
+  box-shadow: 10px 10px 5px #000;
+  margin-bottom: 15px;
+}
+
+.character-name {
+  display: inline;
+  margin-left: 40px;
+  posistion: relative;
+  vertical-align: top;
+}
+
+.content-wrapper {
+  background: rgba(50,50,50,.7);
+}
+
+.content {
+  border: 1px solid;
+  width: 70%;
+  margin:0 auto;
+  padding-top: 50px;
+  background: grey;
+  z-index: 100;
+}
+
+.header-bar {
+  width: 100%;
+  height: 100%;
+  background-image: url('in-the-city.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.header-image {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 30px;
+
+}
+
+.header-title-one {
+  width: 340px;
+  height: 100px;
+  position: absolute;
+  left: 40%;
+  top: 30px;
+  margin: 30px;
+}
+
+.header-title-two {
+  width: 480px;
+  height: 100px;
+  position: absolute;
+  left: 36%;
+  top: 130px;
+  margin: 30px;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+.profile-image {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  display: table;
+}
+
+.profile-image-wrapper{
+  width: 100%;
+}
+
+.nav-extension-show {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+
+}
+
+.nav-extension-hide {
+  width: 100%;
+  height: 0px;
+  background-color: black;
+  visibility: hidden;
+}
+
+.letters {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+  posistion: auto;
+}
+
+#bottom-nav-ul {
+  width: 60%;
+  float:left;
+  padding-top: 5px;
+}
+
+#bottom-nav-content {
+  width: 100%;
+  padding: 3px;
+}
+
+.seach-bar {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#hero-btn {
+  display: inline-block;
+
+
+}
+
+#hero-input {
+  width: 60%;
+  display: inline-block;
+}

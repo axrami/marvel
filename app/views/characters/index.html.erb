@@ -1,0 +1,15 @@
+
+<ul>
+  <% if @characters %>
+    <% @characters.each do |character| %>
+        <li>
+          <div class= "character-wrapper">
+            <%= link_to(image_tag(character.thumbnail, :width => 200, :height => 200, :class=> "char-img"), character_path(character)) %>
+            <h3 class="character-name"><%= character.name %></h3>
+          </div>
+        </li>
+    <% end %>
+  <% else %>
+    <li>Seach for characters</li>
+  <% end %>
+</ul>

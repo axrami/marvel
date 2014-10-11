@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marvel</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<div class="header-bar"></div>
+<%= link_to(image_tag("sheild_logo.png", :class=> "header-image"), "/") %>
+<%= image_tag "sheild_text.png", :class => "header-title-one" %>
+<%= image_tag "hero-directory.png", :class => "header-title-two" %>
+<div class="body-wrapper">
+  <nav class="navbar navbar-inverse" role="">
+    <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="" id="filter"><a href="#" data-no-turbolink>Search Heros</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="nav-extension-hide" id="bottom-nav-bar">
+    <div id="bottom-nav-content">
+      <div class="btn-toolbar" role="toolbar">
+        <ul id="bottom-nav-ul"></ul>
+
+        <div class="seach-bar">
+          <%= form_tag '/search' do -%>
+            <input type="text" id="hero-input" class="form-control" name= "query" placeholder="Hero Search">
+              <button type="hero-submit" id ="hero-btn" class="btn btn-default">Submit</button>
+          <% end -%>
+        </div>
+        </div>
+      </div>
+  </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
