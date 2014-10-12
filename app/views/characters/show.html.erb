@@ -1,7 +1,7 @@
 <div class="profile-image-wrapper">
 <%= image_tag @character.thumbnail, :width => 300, :height => 300, :class=> "profile-image char-img" %>
 </div>
-<h1><%= @character.name %></h1>
+<h1 id="character-name"><%= @character.name %></h1>
   <% if @character.description != "" %>
     <p><%= @character.description %></p>
   <% else %>

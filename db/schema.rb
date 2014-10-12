@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141006233837) do
+ActiveRecord::Schema.define(version: 20141011181249) do
 
   create_table "characters", force: true do |t|
     t.integer  "marvel_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comics", force: true do |t|
+    t.integer  "comic_id"
     t.string   "name"
     t.text     "description"
     t.string   "thumbnail"

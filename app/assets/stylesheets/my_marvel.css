@@ -1,8 +1,6 @@
 .body-wrapper {
   margin-top: 350px;
 }
-
-
 .navbar {
   margin-bottom: 0 !important;
 }
@@ -143,4 +141,16 @@ ul {
 #hero-input {
   width: 60%;
   display: inline-block;
+}
+
+
+/* show view */
+#character-name {
+  text-align: center
+}
+
+#character-description {
+  float:right;
+  display: inline-block;
+
 }

@@ -82,6 +82,7 @@ class CharactersController < ApplicationController
       @characters = Character.where.not(thumbnail: no_thumb).limit(20)
       @characters = @characters.shuffle.slice(0,8)
     end
+
   end
 
   def show
