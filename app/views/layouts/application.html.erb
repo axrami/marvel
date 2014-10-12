@@ -17,8 +17,16 @@
     <div class="container-fluid">
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <% if params[:controller] == 'comics' %>
+        <li><a href="/" data-no-turbolink>Search Heros</a></li>
+        <% else %>
         <li id="character-search-link"><a href="#" data-no-turbolink>Search Heros</a></li>
+        <% end %>
+        <% if params[:controller] == 'characters' %>
         <li id="comic-seach-link"><%= link_to "Comics", "comics#index" %></li>
+        <% else %>
+        <li id="comic-seach-link"><a href="#" data-no-turbolink>Comics</a></li>
+        <% end %>
       </ul>
     </div><!-- /.container-fluid -->
   </nav>
