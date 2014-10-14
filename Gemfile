@@ -51,3 +51,5 @@ gem "oj", "~> 2.5.4"
 gem "annotate", "~> 2.6.1"
 
 gem "slim", "~> 2.0.2"
+
+gem 'will_paginate', '~> 3.0'

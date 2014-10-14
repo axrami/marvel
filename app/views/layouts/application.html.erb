@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 </head>
 <body>
 <div class="header-bar"></div>
@@ -36,7 +35,7 @@
         <ul id="bottom-nav-ul"></ul>
 
         <div class="seach-bar">
-          <%= form_tag '/search' do -%>
+          <%= form_tag '/index' do -%>
             <input type="text" id="hero-input" class="form-control" name= "query" placeholder="Hero Search">
               <button type="hero-submit" id ="hero-btn" class="btn btn-default">Submit</button>
           <% end -%>
@@ -50,6 +49,14 @@
       </div>
     </div>
 </div>
-<div class="footer"></div>
+<div class="footer">
+  <% if params[:id] %>
+
+  <% elsif params[:controller] == 'comics' %>
+
+  <% else %>
+    <%= will_paginate @characters %>
+  <% end %>
+</div>
 </body>
 </html>
