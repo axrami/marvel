@@ -54,7 +54,7 @@
   <% if params[:id] %>
 
   <% elsif params[:controller] == 'comics' %>
-
+    <%= will_paginate @comics %>
   <% else %>
     <%= will_paginate @characters %>
   <% end %>

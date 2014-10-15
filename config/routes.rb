@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
   resources :characters, only: [:index, :show]
-  resources :comic, only: [:index, :show]
+  resources :comics, only: [:index, :show]
   get '/search' => "characters#search"
   post '/index' => "characters#search"
   post '/letter' => "characters#search"
   root 'characters#index'
   get '/comics' => 'comics#index'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

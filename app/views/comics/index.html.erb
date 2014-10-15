@@ -1,1 +1,15 @@
-<h1>Comics go here!</h1>
+
+<ul>
+  <% if @comics %>
+    <% @comics.each do |comic| %>
+        <li>
+          <div class= "character-wrapper">
+            <%= link_to(image_tag(comic.thumbnail, :width => 200, :height => 200, :class=> "char-img"), comic_path(comic)) %>
+            <h3 class="character-name"><%= comic.name %></h3>
+          </div>
+        </li>
+    <% end %>
+  <% else %>
+    <li>Seach for comics</li>
+  <% end %>
+</ul>
