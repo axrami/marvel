@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
@@ -59,3 +59,5 @@ gem "annotate", "~> 2.6.1"
 gem "slim", "~> 2.0.2"
 
 gem 'will_paginate', '~> 3.0'
+
+gem 'unicorn'
