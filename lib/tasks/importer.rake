@@ -25,4 +25,19 @@ namespace :importer do
     end
   end
 
+  desc "Imports series from Marvel API"
+  task series: :environment do
+    series = MarvelApi.all_series
+    series.each do |series|
+      Series.create(title: series["title"],
+                    series_id: series["id"],
+                    description: series["description"],
+                    start_year: series["startYear"],
+                    end_year: series["endYear"],
+                    rating: series["rating"],
+                    type: series["type"],
+                    thumbnail: Series.get_thumbnail(series),
+                    creators: series["creators"],
+                    characters: serie["characters"]
+                    )
 end
