@@ -1,5 +1,5 @@
 <div class="profile-image-wrapper">
-<%= image_tag @comic.thumbnail, :width => 300, :height => 300, :class=> "profile-image char-img" %>
+<%= image_tag @comic.thumbnail, :width => 300, :height => 500, :class=> "profile-image char-img" %>
 </div>
 <h1 id="character-name"><%= @comic.name %></h1>
   <% if @comic.description != "" %>
@@ -8,4 +8,4 @@
     <p>No description availible</p>
   <% end %>
 
-<p>Marvel ID: <%= @comic.comic_id %></p>
+<p>Comic ID: <%= @comic.comic_id %></p>

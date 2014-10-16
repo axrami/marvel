@@ -53,7 +53,7 @@ function popComicBar() {
       toggle = 1;
       $bottomNavList.empty();
       letter.forEach(function(entry) {
-        $bottomNavList.append('<li class=letters><a href="/?search='+entry+'"><div class="btn-group letters">' +entry+ '</div></a></li>');
+        $bottomNavList.append('<li class=letters><a href="/comics/?letter='+entry+'"><div class="btn-group letters">' +entry+ '</div></a></li>');
       });
     } else {
       $bottomNav.removeClass( "nav-extension-show" );
