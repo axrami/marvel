@@ -35,9 +35,10 @@ namespace :importer do
                     start_year: series["startYear"],
                     end_year: series["endYear"],
                     rating: series["rating"],
-                    type: series["type"],
                     thumbnail: Series.get_thumbnail(series),
-                    creators: series["creators"],
-                    characters: serie["characters"]
+                    creators: Series.get_creators(series),
+                    characters: Series.get_characters(series)
                     )
+    end
+  end
 end

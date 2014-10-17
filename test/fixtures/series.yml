@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  series_id: 1
+  description: MyText
+  start_year: 1
+  end_year: 1
+  rating: MyString
+  thumbnail: MyString
+  creators: MyText
+  characters: MyText
+
+two:
+  title: MyString
+  series_id: 1
+  description: MyText
+  start_year: 1
+  end_year: 1
+  rating: MyString
+  thumbnail: MyString
+  creators: MyText
+  characters: MyText

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141011181249) do
+ActiveRecord::Schema.define(version: 20141017003117) do
 
   create_table "characters", force: true do |t|
     t.integer  "marvel_id"
@@ -27,6 +27,20 @@ ActiveRecord::Schema.define(version: 20141011181249) do
     t.string   "name"
     t.text     "description"
     t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "series", force: true do |t|
+    t.string   "title"
+    t.integer  "series_id"
+    t.text     "description"
+    t.integer  "start_year"
+    t.integer  "end_year"
+    t.string   "rating"
+    t.string   "thumbnail"
+    t.text     "creators"
+    t.text     "characters"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -46,9 +46,22 @@ class MarvelApi
       comics.concat(results["data"]["results"])
 
     end
-
     comics
+  end
 
+  def self.all_series
+    series = []
+
+    (0..1).to_a.each do |offset|
+      offset = offset * 100
+
+      results = Oj.load RestClient.get("http://gateway.marvel.com:80/v1/public/series", { params: self.api_key_params(offset), accept: :json})
+
+      break if results["data"]["results"] == []
+
+      series.concat(results["data"]["results"])
+    end
+    series
   end
 
 
